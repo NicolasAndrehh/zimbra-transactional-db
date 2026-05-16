@@ -1,3 +1,9 @@
+# node
+node_modules/
+
+# back
+backend/venv/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
