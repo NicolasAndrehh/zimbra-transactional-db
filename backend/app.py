@@ -12,8 +12,8 @@ CORS(app)
 DB_CONFIG = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'ANAPICO1028',
-    'database': 'PROYECTOZIMBRA'
+    'password': '',
+    'database': ''
 }
 
 def obtener_conexion():
