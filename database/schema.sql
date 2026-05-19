@@ -1,5 +1,5 @@
-Create database SI_Zimbra;
-Use SI_Zimbra;
+Create database zimbra_db;
+Use zimbra_db;
 
 -- 1. Tabla de Colaboradores (Representantes de Ventas)
 CREATE TABLE colaboradores (
@@ -65,3 +65,6 @@ CREATE TABLE contratos_comerciales (
     FOREIGN KEY (prospecto_id) REFERENCES prospectos(prospecto_id),
     CONSTRAINT chk_monto CHECK (monto_total > 0)
 );
+
+INSERT INTO prospectos (prospecto_id, nombre_empresa, email_contacto, version_prueba_vence, estado_prospecto)
+VALUES (1, 'Empresa de Prueba JML', 'contacto@jmlprueba.com', '2026-12-31', 'Frio');
